@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- import base css -->
+  <link rel="stylesheet" href="./base.css" />
+
+  <!-- import app css -->
+  <link rel="stylesheet" href="./index.css" />
+
+
+  <title>Billy Editiano, Income Tracker</title>
+</head>
+
+<body>
+
+  <div class="modal hide" id="add-data-modal">
+    <div class="modal-container">
+
+      <div class="modal-content">
+        <div class="row" id="select-type-container">
+          <small class="pill-primary-dark" id="select-type-income" data="income">
+            INCOME
+          </small>
+          <small class="pill-primary" id="select-type-expense" data="expense">
+            EXPENSE
+          </small>
+        </div>
+
+        <div class="row">
+          <select id="select-category">
+          </select>
+        </div>
+
+        <div class="row">
+          <input type="number" id="add-data-amount" min="0" value="0" />
+        </div>
+      </div>
+
+      <div class="row modal-actions">
+        <button class="bg-primary" style="margin-right: .5em;" id="submit-add-data">ADD</button>
+        <button class="" id="cancel-add-data">CANCEL</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="fab-container">
+    <button id="add-button">
+      +
+    </button>
+  </div>
+
+  <main>
+    <!-- header -->
+    <header id="header" class="bg-primary">
+      <small class="pill-primary">CURRENT BALANCE</small>
+      <div class="wrapper content-center" id="hero">
+        <div id="balance-container">
+          <small id="balance-currency" class="font-bold">IDR</small>
+          <h1 id="balance-text" class="">0</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex-container" id="type-tab-container">
+      <small class="pill-primary-dark" data="0">
+        ALL
+      </small>
+      <small class="pill-primary" data="1">
+        INCOME
+      </small>
+      <small class="pill-primary" data="2">
+        EXPENSE
+      </small>
+    </div>
+
+    <div id="content-container" class="flex-container wrapper">
+
+    </div>
+
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

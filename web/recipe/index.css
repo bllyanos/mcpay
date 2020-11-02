@@ -1,0 +1,74 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  background-color: #264653;
+  padding: 1rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.sidebar {
+  flex: 0 1 300px;
+}
+
+.text-primary {
+  color: white;
+}
+
+.text-secondary {
+  color: #aaaaaa;
+}
+
+.input {
+  padding: 0.35rem;
+  border-radius: 0rem;
+  border: 0.1rem solid #555555;
+}
+
+.button {
+  background-color: #264653;
+  color: white;
+  padding: 0.7rem;
+  border: 0;
+  transition: 0.15s;
+  border-radius: 0rem;
+}
+
+.button:hover {
+  transition: 0.2s;
+  background-color: #2a9d8f;
+  border-radius: 0rem;
+}
+
+.pg-button {
+  background-color: #264653;
+  color: white;
+  padding: 0.7rem;
+  border: 0;
+  transition: 0.15s;
+}
+
+.pg-disabled {
+  background-color: #288c7d;
+  color: white;
+  padding: 0.7rem;
+  border: 0;
+  transition: 0.15s;
+}
+
+.bd-secondary {
+  border-color: #777777;
+}
+
+.recipe-link {
+  color: #288c7d;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #264653;
+}

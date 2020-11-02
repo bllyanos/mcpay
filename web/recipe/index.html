@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- import base css -->
+  <link rel="stylesheet" href="./base.css" />
+
+  <!-- import app css -->
+  <link rel="stylesheet" href="./index.css" />
+
+
+  <title>Recipe Application</title>
+</head>
+
+<body>
+  <main>
+
+    <!-- header -->
+    <header class="header">
+      <div class="wrapper p-3">
+        <h1 class="text-primary">Recipe Puppy</h1>
+        <small class="text-secondary" id="version">version x.x</small>
+      </div>
+    </header>
+
+    <div class="flex-container wrapper py">
+
+      <!-- sidebar -->
+      <aside class="sidebar p-3">
+
+        <div class="row">
+          <input class="input" type="text" id="searchInput" style="flex:1" placeholder="Search.." />
+        </div>
+
+        <div class="row">
+          <input class="input" type="text" id="ingredientsInput" style="flex:1"
+            placeholder="Ingredients.. (ex: onion,garlic)" />
+        </div>
+
+        <div class="row" style="justify-content: flex-end;">
+          <button class="button" id="searchButton">Search</button>
+        </div>
+      </aside>
+
+      <hr class="md-none bd-secondary" />
+
+      <!-- content -->
+      <section class="content p-3">
+        <div id="recipeContainer">
+        </div>
+
+      </section>
+    </div>
+
+    <div class="flex-container wrapper" style="justify-content: center;">
+      <div id="pagination" style="display: flex; justify-content: center;">
+      </div>
+    </div>
+    <div class="p-3"></div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="wrapper p-3">
+        Billy Editiano &copy;
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
