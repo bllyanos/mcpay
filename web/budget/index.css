@@ -272,13 +272,20 @@ a:visited {
 #content-container {
   padding: 1em 0;
   padding-bottom: 4em;
+  display: flex;
+  flex-direction: column;
 }
 
 .budget-row {
   padding: 0 1.5em;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .budget-container {
+  max-width: 640px;
   background-color: var(--primary-extra-light);
   padding: 1em 1em;
   border-radius: .75em;
